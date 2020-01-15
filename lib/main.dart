@@ -33,7 +33,7 @@ class _NappsCRDState extends State<NappsCRD> {
         ),
         centerTitle: true,
         backgroundColor: Colors.black,
-        elevation:10.0,
+        elevation:9.80,
       ),
       body: SingleChildScrollView(
         child: Padding(
