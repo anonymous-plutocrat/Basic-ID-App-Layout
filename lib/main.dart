@@ -58,28 +58,31 @@ class _NappsCRDState extends State<NappsCRD> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          CircleAvatar(
-                              backgroundImage: AssetImage('images/anonymous_plutocrat-20191117-0001.jpg'),
-                              radius: 45.0,
-                            ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                            child: CircleAvatar(
+                                backgroundImage: AssetImage('images/anonymous_plutocrat-20191117-0001.jpg'),
+                                radius: 45.0,
+                              ),
+                          ),
                           Image.asset('images/unnlogo.png', scale: 7),
                         ],
                       ),
                       //Divider(height: 15.0, color: Colors.grey[800]),
 
-                      SizedBox(height: 20.0),
+                      SizedBox(height:10.0),
 
                       Text('Reg No.',
                         style: TextStyle(letterSpacing: 1, fontFamily: 'brash', fontSize: 15, color: Colors.white,fontWeight: FontWeight.bold),
                       ),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Text('$regno',
                             style: TextStyle(letterSpacing: 2, fontSize: 23, fontWeight: FontWeight.bold),
                           ),
-
+                          SizedBox(width: 5),
                           SizedBox( width: 38, height: 10.8,
                             child: RaisedButton(
                               padding: EdgeInsets.all(0.0),
@@ -114,8 +117,8 @@ class _NappsCRDState extends State<NappsCRD> {
                               ),
                             ),
                           ),
-                          SizedBox(width: 2.0),
-                          Image.asset('images/signdited cdr white.png', scale:30.0),
+                          SizedBox(width: 25.0),
+                          Image.asset('images/signdited cdr white.png', scale:27.0),
                         ],
                       ),
 
