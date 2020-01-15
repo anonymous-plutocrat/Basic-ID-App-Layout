@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
-import 'quote.dart';
-import 'Quote_Card.dart';
+
 
 void main() => runApp(MaterialApp(
   home:NappsCRD()
@@ -38,7 +37,7 @@ class _NappsCRDState extends State<NappsCRD> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 0.0),
+          padding: EdgeInsets.fromLTRB(25.0, 20.0, 25.0, 0.0),
           //COLUMN TO STACK UP THE DETAILS
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start, //this is to align the widgets of the column to the left
@@ -48,7 +47,7 @@ class _NappsCRDState extends State<NappsCRD> {
               Card(
                 color: Colors.grey[900],
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(30.0, 30, 30.0, 15.0),
+                  padding: const EdgeInsets.fromLTRB(20.0, 25, 15.0, 15.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween ,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -75,7 +74,7 @@ class _NappsCRDState extends State<NappsCRD> {
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text('$regno',
                             style: TextStyle(letterSpacing: 2, fontSize: 23, fontWeight: FontWeight.bold),
@@ -180,6 +179,7 @@ class _NappsCRDState extends State<NappsCRD> {
 
               Center(child: Image.asset('images/fcqrcardunn.png', height: 150)
               ),
+              SizedBox(width: 10.0),
             ],
           ),
 
